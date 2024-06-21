@@ -12,7 +12,7 @@ pipeline {
      stage ('Maven') {
             steps {
                 dir ("/root/build-tool") {  
-                 sh 'rm -rf *
+                 sh 'rm -rf *'
                   sh 'rm -rf /root/.m2/' 
                 }
             }
