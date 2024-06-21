@@ -7,16 +7,12 @@ pipeline {
   stages {
     stage ("Git") {
       steps {
-        sh 'yum install git -y' }
+      sh 'rm -rf *' }
     }
      stage ('Maven') {
             steps {
                 dir ("/root/build-tool") {  
-                 sh 'rm -rf *'
-                sh 'wget https://dlcdn.apache.org/maven/maven-3/3.9.8/binaries/apache-maven-3.9.8-bin.zip'
-                 sh 'unzip apache-maven-3.9.8-bin.zip'
-                  sh 'rm -rf apache-maven-3.9.8-bin.zip'
-                  sh 'mvn -version'
+                 sh 'rm -rf *
                   sh 'rm -rf /root/.m2/' 
                 }
             }
