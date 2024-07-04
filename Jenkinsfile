@@ -1,4 +1,4 @@
-#PIpeline
+
 pipeline {
   agent {
     label {
